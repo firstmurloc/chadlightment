@@ -298,7 +298,7 @@ function renderWeek(){
   // advice
   const adv=$("advice"); adv.className="advice"; let msg;
   const ph=tg?tg.phase:null;
-  if(!plan){msg="Ładowanie planu…"}
+  if(!plan){msg="Brak planu. Kliknij „Importuj dane” u góry i wybierz plik z danymi."}
   else if(!ph){msg="Dzisiejsza data jest poza planem. Poproś Claude o rozpisanie kolejnych tygodni."}
   else if(ph.first){msg="Pierwszy tydzień po redukcji: waga prawie na pewno skoczy o 0,5–1,5 kg (woda i glikogen). Nie reaguj na to, trzymaj kcal z planu."}
   else if(pw&&p2w){
